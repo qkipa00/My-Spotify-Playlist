@@ -40,12 +40,6 @@ $('#search').click(function(event){
 })
 
 
-if(window.location.href.match(/access_token=([^&]*)/)){
-
-	tokenDeadline();
-
-}
-
 
 function getAccessToken() {
 
@@ -57,7 +51,7 @@ function getAccessToken() {
 
 			tokenDeadline();
 
-			return accessToken = window.location.href.match(/access_token=([^&]*)/)[0].split('=')[1];
+			return accessToken = window.location.href.match(/access_token=([^&]*)/)[1];
 
 		} else { 
 				
@@ -72,10 +66,10 @@ function getAccessToken() {
 
 function tokenDeadline() {
 
-	expirationTime = parseFloat(window.location.href.match(/expires_in=([^&]*)/)[0].split('=')[1]);
+	expirationTime = parseFloat(window.location.href.match(/expires_in=([^&]*)/)[1];
 	window.setTimeout(() => { 
 		accessToken = '';
-		window.history.pushState('Access Token', null, '/spotifyapi/'); 
+		window.history.pushState('Access Token', null, '/My-Spotify-Playlist/'); 
 	}, expirationTime * 10); 
 }
 
