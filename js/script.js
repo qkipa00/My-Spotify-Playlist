@@ -66,7 +66,7 @@ function getAccessToken() {
 
 function tokenDeadline() {
 
-	expirationTime = parseFloat(window.location.href.match(/expires_in=([^&]*)/)[1];
+	expirationTime = parseFloat(window.location.href.match(/expires_in=([^&]*)/)[1]);
 	window.setTimeout(() => { 
 		accessToken = '';
 		window.history.pushState('Access Token', null, '/My-Spotify-Playlist/'); 
