@@ -70,7 +70,7 @@ function tokenDeadline() {
 	window.setTimeout(() => { 
 		accessToken = '';
 		window.history.pushState('Access Token', null, '/My-Spotify-Playlist/'); 
-	}, expirationTime * 10); 
+	}, expirationTime * 1000); 
 }
 
 
