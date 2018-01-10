@@ -5,7 +5,7 @@ var playlist = $('#playlist');
 
 
 var clientId = '99ec5f87417540d58f7ea0523ff0c9d3';
-var redirectUri = 'http://localhost/spotifyapi/';
+var redirectUri = 'https://qkipa00.github.io/My-Spotify-Playlist/';
 var accessToken;
 var scopes = 'user-read-private playlist-modify-private playlist-modify-public';
 
