@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #181f25;
+	color: #fff;
+	height: 100%;
+	max-height: 100vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex: 1 0 auto;
+}
+
+.flex-container {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.search {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+}
+
+.search__input {
+	background-color: transparent;
+	border: 1px solid #090;
+	border-radius: 20px;
+	height: 35px;
+	text-indent: 10px;
+	line-height: 30px;
+	font-size: 16px;
+	width: 300px;
+	color: #fff;
+}
+
+*:focus{
+	outline: none;
+}
+
+
+.search__button {
+	font-size: 16px;
+	line-height: 30px;
+	padding: 0 20px;
+	height: 35px;
+	border: 1px solid #090;
+	background-color: #090;
+	border-radius: 20px;
+	color: #fff;
+	position: relative;
+	left: -40px;
+	font-weight: lighter;
+	
+}
+
+.search__button:hover{
+	cursor: pointer;
+	background-color: #080
+}
+
+.block__title{
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+}
+
+.tracklist,
+.playlist {
+	width: 45%;
+	padding: 0;
+	list-style: none;
+	height: 100%;
+}
+
+.tracklist ul,
+.playlist ul {
+	overflow: auto;
+	height: 100%;
+}
+
+.track {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #555;
+	padding: 10px 0;
+}
+
+.track__id {
+	padding: 0 5px;
+	text-align: center;
+	font-size: 12px;
+	min-width: 25px;
+	color: #aaa;
+}
+
+.track__title {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.track__artist {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.save-button{
+	margin-top: 10px;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #090;
+	border-radius: 3px;
+	background-color: #090;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 20px;
+}
+
+.save-button:hover{
+	background-color: #080;
+	cursor: pointer;
+}
+
+.playlist input {
+	background: transparent;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	
+}
+
+
+footer{
+	position: relative;
+	height: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ccc;
+}

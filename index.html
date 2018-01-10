@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Spotify Playlist</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="search">
+			<form action="">
+				<input type="text" class="search__input" id="search-input">
+				<button id="search" class="search__button">Search</button>
+			</form>
+		</div>
+		<div class="flex-container">
+			<div class="tracklist">
+				<p class="block__title">Search results:</p>
+				<ul id="results">
+					
+				</ul>
+			</div>
+			<div class="playlist">
+				<input type="text" placeholder="Playlist name" id="playlistName" value="Playlist name">
+				<ul id="playlist">
+				</ul>
+				<button class="save-button" id="save-playlist">Save Playlist</button>
+				<div id="notification" class="notification-block"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
