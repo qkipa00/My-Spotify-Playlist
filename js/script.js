@@ -98,8 +98,6 @@ function search(text) {
 	$('#main-container').removeClass('flex-container');
 	$('#main-container').removeClass('flex-container--center');
 	$('.flex-container').removeClass('hide');
-	} else {
-		showNotification('Min. value is 1 letter.')
 	}
 	window.localStorage.setItem('searchValue', '' );
 }
