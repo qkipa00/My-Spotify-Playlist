@@ -184,7 +184,7 @@ if(tracks.length > 0) {
 		}).done(function(data){
 			
 			$('#playlist').html('');
-			showNotification('Playlist added successfully. Check your Spotify App')
+			showNotification('Playlist added successfully. Check your Spotify App', 'notification-block--green')
 		})
 
 
@@ -221,8 +221,8 @@ $(document).on('click', '#results .track', function() {
 
 
 
-function showNotification(msg) {
-	$('#notification').html('');
+function showNotification(msg, msgClass) {
+	$('#notification').html('').addClass(msgClass);
 	$('#notification').append('<p>'+ msg +'</p>');
 }
 

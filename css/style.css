@@ -159,7 +159,12 @@ html, body {
 }
 
 .notification-block{
+	margin-top: 20px;
 	color: #d00;
+}
+
+.notification-block--green {
+	color: #090;
 }
 
 .hide{
