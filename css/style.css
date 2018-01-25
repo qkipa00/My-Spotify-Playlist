@@ -113,6 +113,28 @@ html, body {
 	padding: 10px 0;
 }
 
+.track i {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 14px;
+}
+
+.track i.plus {
+	content: '+';
+}
+
+.track i.minus {
+	content: '-';
+}
+
+.track > div {
+	width: 100%;
+	position: relative;
+}
+
 .track__id {
 	padding: 0 5px;
 	text-align: center;

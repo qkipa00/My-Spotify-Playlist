@@ -113,7 +113,7 @@ function renderPlaylist() {
 
 	$('#playlist').html('');
 	$.each(playlistArr, function(index, el){
-		renderTrackItem(playlist,index,el)
+		renderTrackItem(playlist,index,el, 'minus')
 	});
 
 }
@@ -122,13 +122,13 @@ function renderSearchlist() {
 
 	$('#results').html('');
 	$.each(searchlistArr, function(index, el){
-		renderTrackItem(results,index,el)
+		renderTrackItem(results,index,el,'plus')
 	});
 
 }
 
-function renderTrackItem(domEl, id, item) {
-	domEl.append('<li class="track"><span class="track__id">'+ (id + 1) +'</span><div><h3 class="track__title">'+item.name+'</h3><p class="track__artist">'+item.artists[0].name+'</p><i>+</i></div></li>');
+function renderTrackItem(domEl, id, item, iClass) {
+	domEl.append('<li class="track"><span class="track__id">'+ (id + 1) +'</span><div><h3 class="track__title">'+item.name+'</h3><p class="track__artist">'+item.artists[0].name+'</p><i class='+iClass+'></i></div></li>');
 }
 
 
