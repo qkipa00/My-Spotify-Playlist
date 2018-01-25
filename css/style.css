@@ -159,12 +159,12 @@ html, body {
 }
 
 .notification-block{
-	margin-top: 20px;
+	margin-top: 10px;
 	color: #d00;
 }
 
 .notification-block--green {
-	color: #090;
+	color: #0d0;
 }
 
 .hide{

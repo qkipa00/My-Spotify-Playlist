@@ -94,13 +94,14 @@ function search(text) {
 		}).error(function(data){
 			showNotification(data.responseJSON.error.message)
 		})
+		
+	$('#main-container').removeClass('flex-container');
+	$('#main-container').removeClass('flex-container--center');
+	$('.flex-container').removeClass('hide');
 	} else {
 		showNotification('Min. value is 1 letter.')
 	}
 	window.localStorage.setItem('searchValue', '' );
-	$('#main-container').removeClass('flex-container');
-	$('#main-container').removeClass('flex-container--center');
-	$('.flex-container').removeClass('hide');
 }
 
 function pushToPlaylist(item) {
