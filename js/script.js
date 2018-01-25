@@ -98,7 +98,8 @@ function search(text) {
 		showNotification('Min. value is 1 letter.')
 	}
 	window.localStorage.setItem('searchValue', '' );
-	$('#main-container').removeClass('flex-container, flex-container--center');
+	$('#main-container').removeClass('flex-container');
+	$('#main-container').removeClass('flex-container--center');
 	$('.flex-container').removeClass('hide');
 }
 
