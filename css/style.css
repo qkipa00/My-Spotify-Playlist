@@ -14,7 +14,7 @@ html, body {
 	display: -o-flex;
 	display: flex;
 	flex-direction: column;
-	background: url('./images/bg.jpg');
+	background: url('../images/bg.jpg');
 }
 
 .container {
