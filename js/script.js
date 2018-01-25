@@ -223,7 +223,7 @@ $(document).on('click', '#playlist .track', function() {
 
 	var clickItemId = $(this).index();
 	$(this).remove();
-	playlistArr.splice(0, clickItemId);
+	playlistArr.delete(clickItemId);
 
 });
 
