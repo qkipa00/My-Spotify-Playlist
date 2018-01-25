@@ -17,6 +17,7 @@ html, body {
 	background: url('../images/bg.jpg') 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .container {
@@ -24,6 +25,7 @@ html, body {
 	max-width: 1200px;
 	margin: 0 auto;
 	flex: 1 0 auto;
+	height: 100%;
 }
 
 .flex-container {
@@ -33,6 +35,8 @@ html, body {
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
+	height: calc( 100% - 80px );
+	overflow: auto;
 }
 
 .flex-container--center{
