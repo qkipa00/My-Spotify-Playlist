@@ -94,7 +94,7 @@ function search(text) {
 		}).error(function(data){
 			showNotification(data.responseJSON.error.message)
 		})
-		
+
 	$('#main-container').removeClass('flex-container');
 	$('#main-container').removeClass('flex-container--center');
 	$('.flex-container').removeClass('hide');
@@ -128,7 +128,7 @@ function renderSearchlist() {
 }
 
 function renderTrackItem(domEl, id, item) {
-	domEl.append('<li class="track"><span class="track__id">'+ (id + 1) +'</span><div><h3 class="track__title">'+item.name+'</h3><p class="track__artist">'+item.artists[0].name+'</p></div></li>');
+	domEl.append('<li class="track"><span class="track__id">'+ (id + 1) +'</span><div><h3 class="track__title">'+item.name+'</h3><p class="track__artist">'+item.artists[0].name+'</p><i>+</i></div></li>');
 }
 
 
