@@ -14,7 +14,9 @@ html, body {
 	display: -o-flex;
 	display: flex;
 	flex-direction: column;
-	background: url('../images/bg.jpg');
+	background: url('../images/bg.jpg') 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .container {
