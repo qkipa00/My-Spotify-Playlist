@@ -2,6 +2,14 @@
 	box-sizing: border-box;
 }
 
+
+html {
+	
+	background: url('../images/bg.jpg') 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 html, body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #181f25;
@@ -14,9 +22,6 @@ html, body {
 	display: -o-flex;
 	display: flex;
 	flex-direction: column;
-	background: url('../images/bg.jpg') 50% 50% no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
 	overflow: hidden;
 }
 
