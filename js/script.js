@@ -222,7 +222,7 @@ $(document).on('click', '#results .track', function() {
 $(document).on('click', '#playlist .track', function() {
 
 	var clickItemId = $(this).index();
-
+	$(this).remove();
 	playlistArr.splice(1, clickItemId);
 
 });
