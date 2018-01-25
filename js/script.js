@@ -219,6 +219,15 @@ $(document).on('click', '#results .track', function() {
 });
 
 
+$(document).on('click', '#playlist .track', function() {
+
+	var clickItemId = $(this).index();
+
+	playlistArr.splice(1, clickItemId);
+
+});
+
+
 
 function showNotification(msg, msgClass) {
 	$('#notification').html('').addClass(msgClass);

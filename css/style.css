@@ -113,11 +113,15 @@ html, body {
 	padding: 10px 0;
 }
 
+.track:hover{
+	cursor: pointer;
+}
+
 .track i {
 	position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
+    right: 10px;
     margin: auto;
     height: 14px;
 }
